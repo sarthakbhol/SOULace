@@ -1,115 +1,121 @@
 <?xml version="1.0" encoding="utf-8"?>
 
-    <RelativeLayout
-        xmlns:tools="http://schemas.android.com/tools"
-        xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    android:background="@color/menu_item_background"
+    tools:context="com.bkcd.soulace.sample.RecognizeActivity">
+
+    <ImageView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
 
-        android:background="@color/menu_item_background"
-        tools:context="com.microsoft.projectoxford.emotionsample.RecognizeActivity">
+        android:scaleType="centerCrop"
+        android:src="@drawable/sunrise" />
 
-        <ImageView
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
+    <TextView
+        android:id="@+id/intro"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginTop="26dp"
+        android:text="Eventually, the darkest nights have to fade away, to make way for the brightest sunrise...."
+        android:textColor="#000000"
+        android:textSize="30sp" />
+    <ImageView
+        android:id="@+id/emo_api"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/intro"
+        android:scaleType="centerCrop"
+        android:layout_marginLeft="16dp"
+        android:src="@drawable/h_w_d" />
 
-            android:src="@drawable/sunrise"
-            android:scaleType="centerCrop"/>
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_centerHorizontal="true"
-            android:textColor="#000000"
-            android:textSize="30sp"
-            android:layout_marginLeft="16dp"
-            android:layout_marginRight="16dp"
-            android:layout_marginTop="26dp"
-            android:id="@+id/intro"
-            android:text="Eventually, the darkest nights have to fade away, to make way for the brightest sunrise...."/>
 
 
-        <ImageView
-            android:layout_width="150dp"
-            android:layout_height="150dp"
-            android:layout_below="@id/intro"
-            android:src="@drawable/h_w_d"
-            android:id="@+id/emo_api"
-            android:layout_marginLeft="16dp"
-            android:layout_marginTop="20dp"/>
+    <ImageView
+        android:id="@+id/selectedImage"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_alignParentRight="true"
+        android:layout_below="@id/emo_api"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="16dp"
+        android:background="#FBC02D"
+        android:scaleType="centerCrop" />
 
-        <ImageView
-            android:id="@+id/selectedImage"
-            android:layout_width="150dp"
-            android:layout_height="150dp"
-            android:layout_marginRight="16dp"
-            android:background="#FBC02D"
-            android:scaleType="centerCrop"
-            android:layout_marginLeft="10dp"
-            android:layout_alignParentRight="true"
-            android:layout_below="@id/emo_api"/>
+    <TextView
+        android:id="@+id/intro1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/selectedImage"
+        android:layout_alignStart="@+id/sad_angry"
+        android:layout_below="@id/intro"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginTop="19dp"
+        android:text="So, how was your day? Frustrating?Awesome? Just show us your photo, and let us detect your mood!!"
+        android:textColor="#000000"
+        android:textSize="18sp" />
 
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_below="@id/intro"
-            android:textColor="#000000"
-            android:textSize="18sp"
-            android:layout_marginTop="19dp"
-            android:id="@+id/intro1"
-            android:layout_toRightOf="@id/emo_api"
-            android:layout_marginLeft="10dp"
-            android:layout_marginRight="16dp"
-            android:text="So, how was your day? What was frustrating about your day? Were there any surprisingly fun moments in your day? Were there any challenges you want empathy about? Just show us your photo, and let us detect your mood!!"/>
+    <TextView
+        android:id="@+id/sad_angry"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@id/selectedImage"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_toEndOf="@+id/emo_api"
+        android:text="Some days are great, some are unbearable. Lets cheer you up with a few suggestions. The most common way people give up their power is by thinking they don’t have any. Embrace the next day, full of hope and positivity..."
+        android:textColor="#FFFFFF"
+        android:textSize="17sp"
+        android:textStyle="italic" />
 
-        <TextView
-            android:layout_width="250dp"
-            android:layout_height="wrap_content"
-            android:layout_below="@id/selectedImage"
-            android:layout_marginTop="16dp"
-            android:layout_alignParentRight="true"
-            android:textColor="#FFFFFF"
-            android:id="@+id/sad_angry"
-            android:textSize="17sp"
-            android:textStyle="italic"
-            android:layout_marginLeft="16dp"
-            android:layout_marginRight="16dp"
-            android:layout_marginBottom="10dp"
-            android:text="Some days are great, some are unbearable. Lets cheer you up with a few suggestions. The most common way people give up their power is by thinking they don’t have any. Embrace the next day, full of hope and positivity..."/>
-        <ImageView
-            android:layout_width="wrap_content"
-            android:layout_height="150dp"
-            android:src="@drawable/new_day"
-            android:layout_marginTop="0dp"
-            android:id="@+id/bing"
-            android:layout_marginRight="16dp"
-            android:layout_marginLeft="18dp"
-            android:layout_below="@id/selectedImage"
-            android:layout_alignParentLeft="true"/>
-        <Button
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Click A Selfie"
-            android:id="@+id/buttonSelectImage"
-            android:onClick="takePhoto"
-            android:layout_marginLeft="16dp"
-            android:layout_marginTop="20dp"
-            android:layout_below="@id/emo_api" />
-        <Button
-            android:id="@+id/button_select_a_photo_in_album"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:onClick="selectImageInAlbum"
-            android:text="Gallery Image"
-            android:layout_marginLeft="16dp"
-            android:layout_marginTop="16dp"
-            android:layout_below="@id/buttonSelectImage"
-             />
+    <Button
+        android:id="@+id/buttonSelectImage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/emo_api"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="20dp"
+        android:onClick="takePhoto"
+        android:text="Click A Selfie" />
 
-        <EditText
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:id="@+id/editTextResult"
-            android:layout_below="@id/sad_angry"/>
+    <Button
+        android:id="@+id/button_select_a_photo_in_album"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/buttonSelectImage"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="16dp"
+        android:onClick="selectImageInAlbum"
+        android:text="Gallery Image" />
 
-    </RelativeLayout>
+    <EditText
+        android:id="@+id/editTextResult"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/sad_angry" />
+
+
+    <ImageView
+        android:id="@+id/bing"
+        android:layout_width="180dp"
+        android:layout_height="wrap_content"
+        android:scaleType="fitCenter"
+        android:layout_alignEnd="@+id/button_select_a_photo_in_album"
+        android:layout_below="@+id/button_select_a_photo_in_album"
+        android:layout_marginLeft="18dp"
+        android:layout_marginRight="16dp"
+        android:src="@drawable/new_day" />
+
+</RelativeLayout>
 
