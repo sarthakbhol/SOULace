@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#263238"
+    tools:context="com.example.android.psychisolace.IntroSplashScreen">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/splash"
+        android:id="@+id/first"
+        android:scaleType="centerCrop"/>
+
+    <com.romainpiel.shimmer.ShimmerTextView
+        android:id="@+id/shimmer_tv"
+        android:text="SOULace"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="200dp"
+        android:textColor="#263238"
+        android:textSize="40sp"
+        android:layout_centerHorizontal="true"
+        style="@style/AppTheme1"/>
+
+
+
+    <com.romainpiel.shimmer.ShimmerTextView
+        android:id="@+id/shimmer_tv1"
+        android:text="Surreal. Serene"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textStyle="italic"
+        android:textColor="#263238"
+        android:layout_centerHorizontal="true"
+
+        android:layout_below="@id/shimmer_tv"
+        android:textSize="30sp"
+
+        style="@style/AppTheme1"/>
+</RelativeLayout>
