@@ -7,6 +7,7 @@ After detecting the emotion, we use Bing Search API to provide the users relevan
 To act as your constant emotion companion, SOULace is equipped with a "Dear Diary" utility, to write down and contemplate about your present feelings.
 Once you start using this app, it gets more and more addictive!
 
+We made this app for the Microsoft Hackathon code.fun.do 2016.
 ==============================================================================================
 External Libraries used- Volley, Shimmer, Yalantis(Context-Menu)
 ==============================================================================================
