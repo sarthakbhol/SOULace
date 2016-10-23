@@ -59,7 +59,7 @@
             android:layout_toRightOf="@id/emo_api"
             android:layout_marginLeft="10dp"
             android:layout_marginRight="16dp"
-            android:text="So, how was your day? What was frustrating about your day? Were there any surprisingly fun moments in your day? Were there any challenges you want empathy about? Just show us your photo, and let us detect your mood"/>
+            android:text="So, how was your day? What was frustrating about your day? Were there any surprisingly fun moments in your day? Were there any challenges you want empathy about? Just show us your photo, and let us detect your mood!!"/>
 
         <TextView
             android:layout_width="250dp"
@@ -74,7 +74,7 @@
             android:layout_marginLeft="16dp"
             android:layout_marginRight="16dp"
             android:layout_marginBottom="10dp"
-            android:text="Some days are great, some are unbearable. Lets cheer you up with a few suggestions. The most common way people give up their power is by thinking they don’t have any. Embrace the next day with hope and positivity..."/>
+            android:text="Some days are great, some are unbearable. Lets cheer you up with a few suggestions. The most common way people give up their power is by thinking they don’t have any. Embrace the next day, full of hope and positivity..."/>
         <ImageView
             android:layout_width="wrap_content"
             android:layout_height="150dp"
