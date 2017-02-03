@@ -20,3 +20,4 @@ SOULace was created with a lot of hardwork and dedication (exaggerating maybe!!)
 
 3. Diptark Bose (https://github.com/DiptarkBose)
 
+PlayStore Link -> https://play.google.com/store/apps/details?id=com.bkcd.soulace.sample
